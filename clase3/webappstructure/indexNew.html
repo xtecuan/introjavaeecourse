@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lab 1: Web Application Structure</title>
+
+    <meta name="description" content="Lab 1: Web Application Structure">
+    <meta name="author" content="xtecuan">
+
+    <link href="indexNew_files/css/bootstrap.min.css" rel="stylesheet">
+    <link href="indexNew_files/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Software
+			</h2>
+			<p>
+				<ul>
+
+					<li>OpenJDK 11 (LTS) from 
+						<a href="https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.5%2B10/OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.msi">(download) </a>
+					</li>
+					<li>Apache NetBeans 11.2 from <a href="https://www-eu.apache.org/dist/netbeans/netbeans/11.2/Apache-NetBeans-11.2-bin-windows-x64.exe">(download)</a> </li>
+					<li>
+						Apache Maven 3.6.3 from <a href="https://www-us.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip">(download)</a>
+					</li>
+					<li>
+						Git Bash 2.24.0.2 from <a href="https://github.com/git-for-windows/git/releases/download/v2.24.0.windows.2/Git-2.24.0.2-64-bit.exe">(download)</a>
+					</li>
+					<li>
+						Payara Server 5.193.1 from <a href="https://cta-redirect.hubspot.com/cta/redirect/334594/7cca6202-06a3-4c29-aee0-ca58af60528a">(download)</a>
+					</li>
+				</ul>
+				
+			
+		
+			</p>
+			
+			
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Sistemas Operativos
+			</h2>
+			<p>
+				<ul>
+					<li>Windows</li>
+					<li>Linux</li>
+					<li>MacOS</li>
+				</ul>
+			</p>
+			
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Ejercicios de Laboratorio
+			</h2>
+			<p>
+				
+				<ul>
+					<li>
+						<a class="btn" href="#EX0">Ejercicio 0:</a> Descargar e Instalar OpenJDK, Apache Maven y Apache Netbeans (Crear variables de ambiente JAVA_HOME y MAVEN_HOME)
+					    
+					</li>
+					<li>
+					   <a href="#EX1">
+							<a class="btn" href="#EX1">Ejercicio 1:</a> Crear una nueva aplicación Web llamada MyFirstWebApp
+					   </a>
+					</li>
+					<li>
+							<a class="btn" href="#EX2">Ejercicio 2:</a> Revisar aplicación Web MyFirstWebApp
+					</li>
+					<li>
+							<a class="btn" href="#TAR1">Tarea Laboratorio 1</a>
+					</li>
+				</ul>				
+			</p>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+				<a name="EX0"></a> Ejercicio 0: Descargar e Instalar OpenJDK, Apache Maven and Apache Netbeans (Crear variables de ambiente <b>JAVA_HOME</b> y <b>MAVEN_HOME</b>)
+			</h3>
+			<p>
+				<ul>
+					<li>
+						<h4>0.1 - Descargar e Instalar OpenJDK</h4>
+						<p>
+							<p>
+						    Si usted ya tiene instalado el OpenJDK 11 LTS omita éste paso. Ir la página de 
+							<a href="https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot"> 
+							AdoptOpenJDK 
+							</a> y Descargar el instalador correspondiente a su sistema Operativo:
+							</p>
+							<p>
+							<a href="indexNew_files/img/adoptopenjdk1.png" target="_blank">
+							  <img src="indexNew_files/img/adoptopenjdk1.png" alt="adoptopenjdk1" width="550"/>
+							</a>
+							</p>
+							<p>
+									El Link de descarga Directa: <a href="https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.5%2B10/OpenJDK11U-jdk_x64_windows_hotspot_11.0.5_10.msi">(download) </a>
+							</p>
+							<p><br/></p>
+							<p>
+
+									<div class="container-fluid">
+											<div class="row">
+												<div class="col-md-6">
+														<a href="indexNew_files/img/adoptopenjdk2.png" target="_blank">
+															<img src="indexNew_files/img/adoptopenjdk2.png" alt="adoptopenjdk2"/>
+														  </a>
+												</div>
+												<div class="col-md-6">
+														<a href="indexNew_files/img/adoptopenjdk3.png" target="_blank">
+															<img src="indexNew_files/img/adoptopenjdk3.png" alt="adoptopenjdk3"/>
+														  </a>
+												</div>
+											</div>
+									</div>
+
+									
+							</p>
+							<p><br/></p>
+							<p>
+
+									<div class="container-fluid">
+											<div class="row">
+												<div class="col-md-6">
+														<a href="indexNew_files/img/adoptopenjdk4.png" target="_blank">
+															<img src="indexNew_files/img/adoptopenjdk4.png" alt="adoptopenjdk4"/>
+														  </a>
+												</div>
+												<div class="col-md-6">
+														<a href="indexNew_files/img/adoptopenjdk5.png" target="_blank">
+															<img src="indexNew_files/img/adoptopenjdk5.png" alt="adoptopenjdk5"/>
+														  </a>
+												</div>
+											</div>
+									</div>
+
+							</p>
+							<p></p>
+							
+
+						</p>
+					</li>
+					<li>
+						<h4>0.2 - Crear Variable de ambiente <b>JAVA_HOME</b></h4>
+						<p>
+							En Windows: Presionar tecla de Windows, escribir This PC (Esta PC) y seguir la siguiente secuencia de pasos:
+						</p>
+						<p>
+
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+													<a href="indexNew_files/img/JavaHome1.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome1.png" alt="JavaHome1"/>
+													</a>
+											</div>
+											<div class="col-md-6">
+													<a href="indexNew_files/img/JavaHome2.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome2.png" alt="JavaHome2"/>
+													</a>
+											</div>
+										</div>
+								</div>
+
+						</p>
+						<p><br/></p>
+						<p>
+
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/JavaHome3.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome3.png" alt="JavaHome3" width="550"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/JavaHome4.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome4.png" alt="JavaHome4"/>
+													</a>
+												</p>
+											</div>
+										</div>
+								</div>
+
+						</p>
+						<p><br/></p>
+						<p>
+
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/JavaHome5.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome5.png" alt="JavaHome5" width="550"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/JavaHome6.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome6.png" alt="JavaHome6"/>
+													</a>
+												</p>
+											</div>
+										</div>
+								</div>
+
+						</p>
+						<p><br/></p>
+						<p>
+
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/JavaHome7.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome7.png" alt="JavaHome7" width="550"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/JavaHome8.png" target="_blank">
+														<img src="indexNew_files/img/JavaHome8.png" alt="JavaHome8"/>
+													</a>
+												</p>
+											</div>
+										</div>
+								</div>
+
+						</p>
+						<p><br/></p>
+						<p>
+								<a href="indexNew_files/img/JavaHome9.png" target="_blank">
+									<img src="indexNew_files/img/JavaHome9.png" alt="JavaHome9"/>
+								</a>
+						</p>
+						<p>
+							Presionar OK, tres veces y luego verificar abriendo una terminal del sistema Operativo y escribir los siguientes comandos:
+							<ul>
+								<li>
+									<p><i><b>java -version</b></i></p>
+                                    <p>
+										<a href="indexNew_files/img/cmd1.png" target="_blank">
+										<img src="indexNew_files/img/cmd1.png" alt="cmd1"/>
+									    </a>
+								    </p>
+								</li>
+								<li>
+										<p><i><b>javac -version</b></i></p>
+										<p>
+											<a href="indexNew_files/img/cmd2.png" target="_blank">
+											<img src="indexNew_files/img/cmd2.png" alt="cmd2"/>
+											</a>
+										</p>
+								</li>
+								<li>
+										<p><i><b>jar</b></i></p>
+										<p>
+											<a href="indexNew_files/img/cmd3.png" target="_blank">
+											<img src="indexNew_files/img/cmd3.png" alt="cmd3"/>
+											</a>
+										</p>
+								</li>
+							</ul>
+						</p>
+						<p>Sí la respuesta es como la que se muestra en las capturas de pantalla su Variable <b>JAVA_HOME</b> está correctamente configurada</p>
+					</li>
+					<li>
+						<h4>0.3 - Descargar e Instalar Apache Maven</h4>
+						<p>
+							Si usted ya tiene instalado y configurado Apache Maven omita éste paso. Ir a la página de 
+							<a href="http://maven.apache.org/download.cgi"> Apache Maven </a> y descargar el archivo zip o tar.gz correspondiente:
+						</p>
+						<p>
+								<a href="indexNew_files/img/maven1.png" target="_blank">
+								  <img src="indexNew_files/img/maven1.png" alt="maven1" width="750"/>
+								</a>
+						</p>
+						<p>El proceso de instalación es simplemente extraer el archivo zip o tar.gz en un Path definido por ejemplo C:\WorkNew\</p>
+						<p>
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/maven2.png" target="_blank">
+														<img src="indexNew_files/img/maven2.png" alt="maven2" width="750"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+														<a href="indexNew_files/img/maven3.png" target="_blank">
+															<img src="indexNew_files/img/maven3.png" alt="maven3"/>
+														</a>
+												</p>
+											</div>
+										</div>
+								</div>
+						</p>
+
+					</li>
+					<li>
+						<h4>0.4 - Crear Variable de ambiente <b>MAVEN_HOME</b></h4>
+						<p>
+							De manera similar a la variable <b>JAVA_HOME</b> crear la variable de ambiente <b>MAVEN_HOME</b>, pero apuntando al directorio donde esta extraido el archivo de Apache Maven.						
+						</p>
+						<p>
+							Por ejemplo: <b>C:\WorkNew\Tools\apache-maven-3.6.3</b>
+						</p>
+						<p>
+							Tambien agregar <b>%MAVEN_HOME%\bin</b> a la variable Path del Sistema Operativo, vea las siguientes capturas de pantalla:
+						</p>
+						<p>
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/MavenHome1.png" target="_blank">
+														<img src="indexNew_files/img/MavenHome1.png" alt="MavenHome1"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+														<a href="indexNew_files/img/MavenHome2.png" target="_blank">
+															<img src="indexNew_files/img/MavenHome2.png" alt="MavenHome2"/>
+														</a>
+												</p>
+											</div>
+										</div>
+								</div>
+						</p>
+						<p>
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/MavenHome3.png" target="_blank">
+														<img src="indexNew_files/img/MavenHome3.png" alt="MavenHome3"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+														<a href="indexNew_files/img/MavenHome4.png" target="_blank">
+															<img src="indexNew_files/img/MavenHome4.png" alt="MavenHome4"/>
+														</a>
+												</p>
+											</div>
+										</div>
+								</div>
+						</p>
+						<p>
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/MavenHome5.png" target="_blank">
+														<img src="indexNew_files/img/MavenHome5.png" alt="MavenHome5"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+														<a href="indexNew_files/img/MavenHome6.png" target="_blank">
+															<img src="indexNew_files/img/MavenHome6.png" alt="MavenHome6"/>
+														</a>
+												</p>
+											</div>
+										</div>
+								</div>
+						</p>
+						<p>
+								Presionar OK, tres veces y luego verificar abriendo una terminal del sistema Operativo y escribir el siguiente comando: 
+								<ul>
+										<li>
+											<p><i><b>mvn -version</b></i></p>
+											<p>
+												<a href="indexNew_files/img/mvncmd.png" target="_blank">
+												<img src="indexNew_files/img/mvncmd.png" alt="mvncmd"/>
+												</a>
+											</p>
+										</li>
+										
+									</ul>
+						</p>
+						<p>Sí la respuesta es como la que se muestra en las capturas de pantalla su Variable <b>MAVEN_HOME</b> está correctamente configurada</p>
+
+					</li>
+				</ul>
+				
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+					<a name="EX1"></a>Ejercicio 1: Crear una nueva aplicación Web llamada MyFirstWebApp
+			</h3>
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+					<a name="EX2"></a>Ejercicio 2: Revisar aplicación Web MyFirstWebApp
+			</h3>
+			<p>
+				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+			<div class="col-md-12">
+				<h3>
+						<a name="TAR1"></a>Tarea Laboratorio 1
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+				</p>
+			</div>
+		</div>
+</div>
+
+    <script src="indexNew_files/js/jquery.min.js"></script>
+    <script src="indexNew_files/js/bootstrap.min.js"></script>
+    <script src="indexNew_files/js/scripts.js"></script>
+  </body>
+</html>
