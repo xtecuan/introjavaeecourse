@@ -16,6 +16,15 @@
   </head>
   <body>
 
+		<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						   <h1><b>Lab 1: Web Application Structure</b></h1>
+						   <p><br/></p>
+					</div>
+				</div>
+		</div>
+
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
@@ -67,7 +76,8 @@
 				
 				<ul>
 					<li>
-						<a class="btn" href="#EX0">Ejercicio 0:</a> Descargar e Instalar OpenJDK, Apache Maven y Apache Netbeans (Crear variables de ambiente JAVA_HOME y MAVEN_HOME)
+						<a class="btn" href="#EX0">Ejercicio 0:</a> Descargar e Instalar OpenJDK, Apache Maven,Payara Server y Apache Netbeans 
+						(Crear variables de ambiente JAVA_HOME y MAVEN_HOME)
 					    
 					</li>
 					<li>
@@ -89,7 +99,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h3>
-				<a name="EX0"></a> Ejercicio 0: Descargar e Instalar OpenJDK, Apache Maven and Apache Netbeans (Crear variables de ambiente <b>JAVA_HOME</b> y <b>MAVEN_HOME</b>)
+				<a name="EX0"></a> Ejercicio 0: Descargar e Instalar OpenJDK, Apache Maven, Payara Server y Apache Netbeans (Crear variables de ambiente <b>JAVA_HOME</b> y <b>MAVEN_HOME</b>)
 			</h3>
 			<p>
 				<ul>
@@ -404,6 +414,145 @@
 						</p>
 						<p>Sí la respuesta es como la que se muestra en las capturas de pantalla su Variable <b>MAVEN_HOME</b> está correctamente configurada</p>
 
+					</li>
+					<li>
+						<h4>0.5 - Descargar e Instalar Payara Server</h4>
+						<p>
+								Si usted ya tiene instalado y configurado Payara Server omita éste paso. Ir a la página de 
+								<a href="https://www.payara.fish/software/downloads/?utm_referrer=https%3A%2F%2Fwww.payara.fish%2Fsoftware%2Fpayara-server%2F"> 
+									Payara Server 
+								</a> y descargar el archivo zip correspondiente:
+						</p>
+						<p>
+							Link de descarga directa: <a href="https://cta-redirect.hubspot.com/cta/redirect/334594/7cca6202-06a3-4c29-aee0-ca58af60528a">(download)</a>
+						</p>
+						<p>
+								<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6">
+												<p>
+													<a href="indexNew_files/img/payara1.png" target="_blank">
+														<img src="indexNew_files/img/payara1.png" alt="payara1" width="650"/>
+													</a>
+												</p>
+											</div>
+											<div class="col-md-6">
+												<p>
+														<a href="indexNew_files/img/payara2.png" target="_blank">
+															<img src="indexNew_files/img/payara2.png" alt="payara2" width="550"/>
+														</a>
+												</p>
+											</div>
+										</div>
+								</div>
+						</p>
+						<p>
+							Se puede crear una variable de ambiente llamada <b>PAYARA_HOME</b> apuntando al directorio donde se descomprimió el servidor,
+							y Agregar %PAYARA_HOME%\bin a la variable Path para poder iniciar el servidor desde linea de comandos.  
+						</p>
+						<p>
+							<ul>
+								<li>Para iniciar el Payara server desde linea de comandos ejecutar el siguiente comando: <i><b>asadmin start-domain domain1</b></i>
+									<p>
+										<a href="indexNew_files/img/payara3.png" target="_blank">
+											<img src="indexNew_files/img/payara3.png" alt="payara3" width="550"/>
+										</a>
+									</p>
+								</li>
+							</ul>
+						</p>
+					</li>
+					<li>
+							<h4>0.6 - Descargar e Instalar Apache NetBeans</h4>
+							<p>
+									Si usted ya tiene instalado y configurado Apache Netbeans omita éste paso. Ir a la página de 
+									<a href="https://netbeans.apache.org/download/nb112/nb112.html"> 
+										Apache Netbeans
+									</a> y descargar el archivo zip o Ejecutable correspondiente:
+							</p>
+							<p>
+								Link de descarga directa: <a href="https://www-eu.apache.org/dist/netbeans/netbeans/11.2/Apache-NetBeans-11.2-bin-windows-x64.exe">(download)</a>
+							</p>
+							<p>
+									<div class="container-fluid">
+											<div class="row">
+												<div class="col-md-6">
+													<p>
+														<a href="indexNew_files/img/netbeans0.jpg" target="_blank">
+															<img src="indexNew_files/img/netbeans0.jpg" alt="netbeans0" width="650"/>
+														</a>
+													</p>
+												</div>
+												<div class="col-md-6">
+													<p>
+															<a href="indexNew_files/img/netbeans00.jpg" target="_blank">
+																<img src="indexNew_files/img/netbeans00.jpg" alt="netbeans00" width="650"/>
+															</a>
+													</p>
+												</div>
+											</div>
+									</div>
+							</p>
+							<p>
+									<div class="container-fluid">
+											<div class="row">
+												<div class="col-md-6">
+													<p>
+														<a href="indexNew_files/img/netbeans1.jpg" target="_blank">
+															<img src="indexNew_files/img/netbeans1.jpg" alt="netbeans1"/>
+														</a>
+													</p>
+												</div>
+												<div class="col-md-6">
+													<p>
+															<a href="indexNew_files/img/netbeans2.jpg" target="_blank">
+																<img src="indexNew_files/img/netbeans2.jpg" alt="netbeans2"/>
+															</a>
+													</p>
+												</div>
+											</div>
+									</div>
+							</p>
+							<p>
+									<div class="container-fluid">
+											<div class="row">
+												<div class="col-md-6">
+													<p>
+														<a href="indexNew_files/img/netbeans3.jpg" target="_blank">
+															<img src="indexNew_files/img/netbeans3.jpg" alt="netbeans3"/>
+														</a>
+													</p>
+												</div>
+												<div class="col-md-6">
+													<p>
+															<a href="indexNew_files/img/netbeans4.jpg" target="_blank">
+																<img src="indexNew_files/img/netbeans4.jpg" alt="netbeans4"/>
+															</a>
+													</p>
+												</div>
+											</div>
+									</div>
+							</p>
+							<p>
+									<div class="container-fluid">
+											<div class="row">
+												<div class="col-md-6">
+													<p>
+														<a href="indexNew_files/img/netbeans5.jpg" target="_blank">
+															<img src="indexNew_files/img/netbeans5.jpg" alt="netbeans5"/>
+														</a>
+													</p>
+												</div>
+												<div class="col-md-6">
+													<p>
+															<a href="indexNew_files/img/netbeans6.jpg" target="_blank">
+																<img src="indexNew_files/img/netbeans6.jpg" alt="netbeans6"/>
+															</a>
+													</p>
+												</div>
+											</div>
+									</div>
+							</p>
 					</li>
 				</ul>
 				
