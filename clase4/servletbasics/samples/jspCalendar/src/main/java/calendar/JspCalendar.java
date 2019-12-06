@@ -13,9 +13,22 @@ import java.util.Calendar;
  */
 public class JspCalendar {
 
+    private int day;
+
+    private int month;
+
+    private int year;
+
     private Calendar c = Calendar.getInstance();
 
     public JspCalendar() {
+    }
+
+    public JspCalendar(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.c.set(year, month - 1, day);
     }
 
     public int getDayOfMonth() {
