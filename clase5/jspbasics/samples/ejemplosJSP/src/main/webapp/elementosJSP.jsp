@@ -37,10 +37,24 @@
             hw.setApellidos("Rivera Pineda");
             hw.setNombres("Julian");
         %>
-        
-        <h1>Hello: <%=hw.getNombreCompleto()%></h1>
-        
 
-        
+        <h1>Hello: <%=hw.getNombreCompleto()%></h1>
+
+        <%
+
+            int x = 1000;
+            out.println("<ul>");
+
+            for (int i = 0; i < x; i++) {
+                out.println("<li>ITEM-" + i + "</li>");
+            }
+
+            out.println("</ul>");
+
+
+        %>
+
+
+
     </body>
 </html>

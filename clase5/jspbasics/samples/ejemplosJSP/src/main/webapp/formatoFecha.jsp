@@ -1,9 +1,10 @@
 <%-- 
-    Document   : fechahora
-    Created on : Dec 13, 2019, 9:07:31 AM
+    Document   : formatoFecha
+    Created on : Dec 13, 2019, 11:22:47 AM
     Author     : xtecuan
 --%>
 
+<%@page import="beans.Fechas"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,10 +13,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hola la fecha y hora actual es: <%=new java.util.Date()%></h1>
         
-        <%=new java.text.SimpleDateFormat("dd/MM/YYY").format(new java.util.Date())%>
-                
+        <% Fechas f = new Fechas();
+            f.setDate(new java.util.Date());
+        %>
         
+       <h1><%=f.getFormattedDate()%></h1>
     </body>
 </html>
