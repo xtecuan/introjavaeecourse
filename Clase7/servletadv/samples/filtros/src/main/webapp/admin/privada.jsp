@@ -1,7 +1,6 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%-- 
-    Document   : index
-    Created on : Dec 14, 2019, 9:45:44 AM
+    Document   : privada
+    Created on : Dec 14, 2019, 12:21:00 PM
     Author     : xtecuan
 --%>
 
@@ -10,12 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pagina Index</title>
+        <title>Privada</title>
     </head>
     <body>
-        <h1>Pagina Index</h1>
-
-      
-
+        <h1>Privada</h1>
     </body>
 </html>
