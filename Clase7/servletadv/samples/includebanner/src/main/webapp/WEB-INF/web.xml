@@ -16,6 +16,14 @@
         <servlet-name>MainServlet</servlet-name>
         <url-pattern>/main</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletFedecredito</servlet-name>
+        <servlet-class>servlets.ServletFedecredito</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletFedecredito</servlet-name>
+        <url-pattern>/mix</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
