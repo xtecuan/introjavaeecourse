@@ -4,9 +4,16 @@
         <description>ServletContextListener</description>
         <listener-class>sv.com.fedecredito.valves.listeners.MyContextListener</listener-class>
     </listener>
+    <listener>
+        <description>HttpSessionListener</description>
+        <listener-class>sv.com.fedecredito.valves.listeners.MySessionListener</listener-class>
+    </listener>
     <session-config>
         <session-timeout>
-            30
+            1
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>

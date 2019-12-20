@@ -7,6 +7,9 @@ package sv.com.fedecredito.valves.listeners;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 
 /**
  * Web application lifecycle listener.
@@ -15,15 +18,15 @@ import javax.servlet.ServletContextListener;
  */
 public class MyContextListener implements ServletContextListener {
 
-    //private static final Logger logger = LogManager.getLogger(MyContextListener.class);
+    private static final Logger logger = LogManager.getLogger(MyContextListener.class);
     
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("La aplicacion acaba de iniciar: " + sce.getServletContext().getContextPath());
+        logger.info("La aplicacion acaba de iniciar: " + sce.getServletContext().getContextPath());
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        System.out.println("La aplicacion se acaba de destruir: " + sce.getServletContext().getContextPath());
+        logger.info("La aplicacion se acaba de destruir: " + sce.getServletContext().getContextPath());
     }
 }
