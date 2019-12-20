@@ -15,7 +15,7 @@
     </head>
     <body>
         <h1>Reporte de Empleados</h1>
-        <sql:query var="result" dataSource="jdbc/orcl">
+        <sql:query var="result" dataSource="jdbc/orclLocal">
             SELECT * FROM EMPLOYEES
         </sql:query>
 
