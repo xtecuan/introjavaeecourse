@@ -15,9 +15,11 @@
         <h1>Su Información es:</h1>
         
         <ul>
+            <li>ID: <%=session.getId()%></li>
             <li>Nombres: ${sessionScope['nombres']}</li>
             <li>Apellidos: ${sessionScope['apellidos']}</li>
             <li>Email: ${sessionScope['email']}</li>
+            <li>Fecha Nacimiento: ${sessionScope['bday']}</li>
         </ul>
         
         <a href="index.jsp">

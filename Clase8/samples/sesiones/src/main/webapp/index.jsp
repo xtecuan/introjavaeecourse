@@ -42,6 +42,11 @@
                                    value="${sessionScope['email']}" /></td>
                     </tr>
                     <tr>
+                        <td>Fecha de Nacimiento:</td>
+                        <td><input type="text" name="bday" 
+                                   value="${sessionScope['bday']}" /></td>
+                    </tr>
+                    <tr>
                         <td><input type="submit" value="Enviar a Sesion" /></td>
                         <td><input type="reset" value="Reset" /></td>
                     </tr>

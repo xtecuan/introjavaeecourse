@@ -26,6 +26,7 @@ public class SesionServlet extends HttpServlet {
         String nombres = req.getParameter("nombres");
         String apellidos = req.getParameter("apellidos");
         String email = req.getParameter("email");
+        String bday = req.getParameter("bday");
 
         HttpSession session = req.getSession();
 
@@ -45,6 +46,12 @@ public class SesionServlet extends HttpServlet {
             session.setAttribute("email", email);
         } else {
             session.setAttribute("email", UNKNOWN);
+        }
+
+        if (bday != null && bday.length() > 0) {
+            session.setAttribute("bday", bday);
+        } else {
+            session.setAttribute("bday", UNKNOWN);
         }
 
         resp.sendRedirect(getServletContext().getContextPath() + "/" + LEER);
