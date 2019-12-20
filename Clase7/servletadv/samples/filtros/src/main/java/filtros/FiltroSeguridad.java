@@ -23,34 +23,36 @@ import javax.servlet.http.HttpSession;
  * @author xtecuan
  */
 public class FiltroSeguridad implements Filter {
-    
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        
+
     }
-    
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest r = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-        
+
         String url = r.getRequestURI();
-        
+
+        System.out.println("Current URL: " + url);
+
         HttpSession session = r.getSession();
-        
+
         String token = (String) session.getAttribute("token");
-        
+
         if (token != null) {
             chain.doFilter(request, response);
         } else {
             resp.sendRedirect(r.getContextPath() + "/login.jsp");
         }
-        
+
     }
-    
+
     @Override
     public void destroy() {
-        
+
     }
-    
+
 }
