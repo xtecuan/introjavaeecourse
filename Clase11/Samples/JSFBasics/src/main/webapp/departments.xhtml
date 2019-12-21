@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title><h:outputText value="#{jsfbundle.departments_title}"/></title>
+    </h:head>
+    <h:body>
+        <h1><h:outputText value="#{jsfbundle.departments_header}"/></h1>
+        <p:separator />
+
+        <p:dataTable id="departmentTable" value="#{departmentsBean.depts}" var="depto">
+
+            <p:column headerText="#{jsfbundle.departments_id}">
+                <p:outputLabel value="#{depto.departmentId}"/>
+            </p:column>
+            <p:column headerText="#{jsfbundle.departments_name}">
+                <p:outputLabel value="#{depto.departmentName}"/>
+            </p:column>
+            <p:column headerText="#{jsfbundle.departments_manager}">
+                <p:outputLabel value="#{depto.managerId.firstName} #{depto.managerId.lastName}"/>
+            </p:column>
+            <p:column headerText="#{jsfbundle.departments_location}">
+                <p:outputLabel value="#{depto.locationId.city} #{depto.locationId.postalCode}"/>
+            </p:column>
+
+        </p:dataTable>
+
+    </h:body>
+</html>
+
